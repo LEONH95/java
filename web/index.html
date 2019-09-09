@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <base href="http://www.example.com/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/general.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <div id = "encabezado">
+            
+            <h1>Usuario</h1>
+            <button class="btn btn-primary" id="btnNuevo" onclick="crearNuevo()">Nuevo</button>
+        </div>
+        <div id="contenedor">
+            <div id = "col-izq">
+                
+                
+            </div>
+            <div id = "col-der">
+                <div class="info">ID: <a id="idUsuario" class="info"></a></div>
+                <div>Nombre: <a id="nombreUsuario" class="info"></a><input id="nombreNvUsuario" class="nuevo form-control"></div>
+                <div>Apellidos: <a id="apellidosUsuario" class="info"></a><input id="apellidosNvUsuario" class="nuevo form-control"></div>
+                <div>Fecha de Nacimiento: <a id="fechaNacimiento" class="info"></a><input id="fechaNacimientoNvUsuario" class="nuevo form-control"></div>
+                <div><button id="nuevoUsuario" onclick="agregarUsuario()" class="nuevo btn btn-primary">Agregar usuario</button></div>
+                <div><button id="editarUsuario" style="display: none" onclick="editarUsuario()" class="editar btn btn-secondary">Editar usuario</button></div>
+                <div><button id="borrarUsuario" style="display: none" onclick="borrarUsuario()" class="borrar btn btn-secondary">Borrar usuario</button></div>
+                <div><button id="borrarSi" style="display: none" onclick="siBorrarUsuario()" class="borrar btn btn-success">Si</button></div>
+                <div><button id="borrarNo" style="display: none" onclick="noBorrarUsuario()" class="borrar btn btn-secondary">No</button></div>
+                <div><button id="actualizarUsuario" style="display: none" onclick="actualizarUsuario()" class="actualizar btn btn-secondary">Actualizar usuario</button></div>
+                <div><button id="cancelarCambios" style="display: none" onclick="cancelarCambios()" class="cancelar btn btn-secondary">Cancelar cambios</button></div>
+               
+            </div>
+            
+        </div>
+        
+        <script src="controller/generaljs.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

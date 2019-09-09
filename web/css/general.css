@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 27, 2019, 3:12:06 PM
+    Author     : LEON
+*/
+
+h1, h2, h3, h4, h5, h6{
+    padding-top: 20px;
+    margin: 0px;
+
+}
+
+body, html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#encabezado{
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding-bottom: 7%;
+}
+
+
+
+#contenedor{
+    height: 100%;
+    width: 100%;
+}
+
+
+#col-izq{
+    float: left;
+    height: 100%;
+    width: 40%;
+    background-color: orange;
+    
+}
+
+#col-der{
+    float: right;
+    height: 100%;
+    width: 60%;
+    background-color: green;
+  
+}
+
+#col-der div{
+    
+    margin:15px;
+    font-size: 20px;
+    
+}
+
+.usuario{
+    
+    margin-top: 7px; 
+    margin-bottom: 7px;
+    border: 5px solid teal;
+}
+
+.usuario:hover{
+    background-color: activecaption;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.usuario .idUsuario{
+   padding-left: 50px;
+    
+} 
+
+.usuario .nombreUsuario{
+    float: right;
+    padding-right: 150px;
+}
+
+#col-der div a{
+    color: white;
+}
